@@ -14,7 +14,7 @@ timezone: America/New_York
 title: Martin Laskowski
 tagline: Dude makes things  # displayed as sub-title
 description: >-  # used by seo meta and the atom feed
-  Dude makes things
+  This might not work, but it's worth a shot.
 url: "https://martinlaskowski.com"  # protocol & domain ... NB: doesn't end with '/'
 github:
   username: MartinLaskowski
@@ -26,6 +26,7 @@ social:
   links:  # first element serves as copyright owner's link
     - https://www.linkedin.com/in/martinlaskowski
     - https://github.com/MartinLaskowski
+    - https://www.youtube.com/@MartinLaskowski
     # - https://twitter.com/martylasky
 google_site_verification: f7Du2wruICOL9DQTJHOyLnkI5l-c8cgyBH2XVPMRqaA
 # ↑ --------------------------
