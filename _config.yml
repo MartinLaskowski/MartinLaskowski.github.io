@@ -1,115 +1,81 @@
-# The Site Configuration
-
-# Import the theme
+# theme to import
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# site language › http://www.lingoes.net/en/translator/langcode.htm
+# if the same name as a file in `_data/locales` the layout language is also changed,
+# otherwise layout language uses default 'en'.
 lang: en
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+# timezone › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: America/New_York
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
-
-title: Chirpy # the main title
-
-tagline: A text-focused Jekyll theme # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
-
+title: Martin Laskowski
+tagline: Dude makes things  # displayed as sub-title
+description: >-  # used by seo meta and the atom feed
+  Dude makes things
+url: "https://martinlaskowski.com"  # protocol & domain ... NB: doesn't end with '/'
 github:
-  username: github_username # change to your github username
-
-twitter:
-  username: twitter_username # change to your twitter username
-
+  username: MartinLaskowski
+# twitter: 
+#   username: @martylasky
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
-google_site_verification: # fill in to your verification string
-
+  name: Martin Laskowski  # displayed as default author of posts and copyright owner (in footer)
+  email: martinlaskowski@me.com
+  links:  # first element serves as copyright owner's link
+    - https://www.linkedin.com/in/martinlaskowski
+    - https://github.com/MartinLaskowski
+    # - https://twitter.com/martylasky
+google_site_verification: f7Du2wruICOL9DQTJHOyLnkI5l-c8cgyBH2XVPMRqaA
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: 406179553
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
-theme_mode: # [light|dark]
+theme_mode: # [light|dark] ... empty = follow user's system choice and offer toggle button
 
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
+# CDN endpoint for images
+# once assigned, CDN url is added to image paths starting with '/'
 # e.g. 'https://cdn.com'
 img_cdn:
 
-# the avatar on sidebar, support local or CORS resources
-avatar:
+# avatar image on sidebar, supports local and CORS resources
+avatar: /assets/img/espresso.jpg
 
-# boolean type, the global switch for TOC in posts.
+# whether to show TOC in posts
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
-  # The active options are as follows:
+  active:  # global switch for posts comments, e.g., 'disqus' ... keep fields empty to disable
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
-  giscus:
-    repo: # <gh-username>/<repo>
+    shortname:  # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  utterances:  # utterances settings › https://utteranc.es/
+    repo:  # <gh-username>/<repo>
+    issue_term:  # < url | pathname | title | ...>
+  giscus:  # Giscus options › https://giscus.app
+    repo:  # <gh-username>/<repo>
     repo_id:
     category:
     category_id:
-    mapping: # optional, default to 'pathname'
+    mapping:  # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    lang:  # optional, default to the value of `site.lang`
+    reactions_enabled:  # optional, default to the value of `1`
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+# optional self-hosted static assets › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
+    enabled: # boolean, empty means 'false'
+    # specify Jekyll environment, empty means both dev and prod
     # only works if `assets.self_host.enabled` is 'true'
     env: # [development|production]
 
 pwa:
   enabled: true # the option for PWA feature
 
-paginate: 10
+paginate: 13
 
 # The base URL of your site
 baseurl: ""
